@@ -1,0 +1,19 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+}
+
+article{
+    background-color: red ;
+}
+
+article:nth-of-type(even){
+    border-radius: 50%;
+}
+
+article:nth-of-type(odd){
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
